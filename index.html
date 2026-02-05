@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Yasin - BTS SIO</title>
+    <title>Yasin - BTS SIO</title>
     <style>
-        /* --- 1. DESIGN GÉNÉRAL --- */
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f6f9; /* Gris très léger et moderne */
+            background-color: #f4f6f9;
             margin: 0;
             padding: 0;
             display: flex;
@@ -17,9 +17,9 @@
             min-height: 100vh;
         }
 
-        /* --- 2. L'EN-TÊTE (Header) --- */
+
         header {
-            background: linear-gradient(135deg, #1e3c72, #2a5298); /* Dégradé Bleu Profond */
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
             color: white;
             width: 100%;
             padding: 50px 0;
@@ -31,35 +31,35 @@
         header h1 { margin: 0; font-size: 2.5rem; letter-spacing: 1px; }
         header p { margin-top: 10px; font-size: 1.2rem; opacity: 0.9; }
 
-        /* --- 3. LA GRILLE DES PROJETS --- */
+
         .container {
             max-width: 1100px;
             width: 90%;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive automatique */
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 25px;
             padding-bottom: 60px;
         }
 
-        /* --- 4. LES CARTES (CARDS) --- */
+
         .card {
             background: white;
             border-radius: 15px;
             padding: 25px;
-            text-decoration: none; /* Enlève le souligné des liens */
+            text-decoration: none; 
             color: #333;
             box-shadow: 0 5px 15px rgba(0,0,0,0.05);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             display: flex;
             flex-direction: column;
-            border-top: 5px solid transparent; /* Prépare la bordure colorée */
+            border-top: 5px solid transparent; 
         }
 
-        /* Effet quand on passe la souris dessus */
+
         .card:hover {
-            transform: translateY(-7px); /* La carte monte */
+            transform: translateY(-7px); 
             box-shadow: 0 15px 30px rgba(0,0,0,0.15);
-            border-top: 5px solid #2a5298; /* Petite barre bleue en haut */
+            border-top: 5px solid #2a5298; 
         }
 
         .tag {
@@ -83,7 +83,7 @@
             font-size: 0.95rem;
             color: #666;
             line-height: 1.5;
-            flex-grow: 1; /* Pousse le bouton vers le bas */
+            flex-grow: 1; 
         }
 
         .btn-link {
@@ -102,10 +102,10 @@
         }
 
         .card:hover .btn-link::after {
-            margin-left: 10px; /* La flèche bouge au survol */
+            margin-left: 10px; 
         }
 
-        /* --- 5. PIED DE PAGE --- */
+
         footer {
             margin-top: auto;
             padding: 20px;
