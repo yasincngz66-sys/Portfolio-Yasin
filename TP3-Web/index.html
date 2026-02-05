@@ -12,9 +12,76 @@
     <a href="../index.html">Retour au menu principal</a>
 </body>
 </html>
-<h2>EXERCICE 1 : Glossaire des balises HTML</h2>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossaire HTML</title>
+    <style>
+        /* Style général du tableau */
+        .styled-table {
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.9em;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-width: 400px;
+            width: 100%;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+            border-radius: 5px 5px 0 0;
+            overflow: hidden; /* Pour les coins arrondis */
+        }
 
-    <table border="1" width="100%">
+        /* L'en-tête (Header) */
+        .styled-table thead tr {
+            background-color: #009879; /* Vert émeraude moderne */
+            color: #ffffff;
+            text-align: left;
+        }
+
+        /* Les cellules */
+        .styled-table th,
+        .styled-table td {
+            padding: 12px 15px;
+        }
+
+        /* Lignes alternées (Zebra striping) */
+        .styled-table tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        .styled-table tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        .styled-table tbody tr:last-of-type {
+            border-bottom: 2px solid #009879;
+        }
+
+        /* Effet au survol de la souris */
+        .styled-table tbody tr:hover {
+            background-color: #f1f1f1;
+            font-weight: bold;
+            color: #009879;
+            cursor: default;
+        }
+
+        /* Style des balises <code> */
+        code {
+            background-color: #eee;
+            color: #d63384; /* Rose/Rouge type éditeur de code */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "Consolas", "Monaco", monospace;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>EXERCICE 1 : Glossaire des balises HTML</h2>
+
+    <table class="styled-table">
         <thead>
             <tr>
                 <th>Balise</th>
@@ -66,6 +133,7 @@
                 <td><code>&lt;h1&gt;</code></td>
                 <td>Titre principal (le plus important).</td>
             </tr>
+            <tr>
                 <td><code>&lt;p&gt;</code></td>
                 <td>Paragraphe de texte.</td>
             </tr>
@@ -83,9 +151,6 @@
             </tr>
         </tbody>
     </table>
-
-    <br><br>
-    <hr> <br><br>
 
     <h2>EXERCICE 2 : Reproduction du texte SQL</h2>
 
