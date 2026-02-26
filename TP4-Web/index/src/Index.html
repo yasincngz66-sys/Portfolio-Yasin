@@ -2,23 +2,38 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Page d'Accueil - Bloc-Prog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prog Web - Bloc 1</title>
     <link rel="stylesheet" href="Style/style.css">
 </head>
 <body>
-    <h1>TITRE DU SITE</h1> <div class="images-container">
-        <a href="Docs/cours_HTML.html"><img src="Image/html_logo.png" alt="HTML" width="74" height="60"></a>
-        <a href="Docs/cours_CSS.html"><img src="Image/css_logo.jpg" alt="CSS" width="74" height="60"></a>
-        <a href="Docs/cours_JS.html"><img src="Image/js_logo.jpg" alt="JS" width="74" height="60"></a>
+
+    <header>
+        <h1>PROG WEB</h1>
+        <p>BTS SIO - Bloc 1</p>
+    </header>
+
+    <div class="cards-container">
+        <a href="Docs/cours_HTML.html" class="card">
+            <img src="Image/html_logo.png" alt="Logo HTML">
+            <h2>HTML</h2>
+        </a>
+
+        <a href="Docs/cours_CSS.html" class="card">
+            <img src="Image/css_logo.jpg" alt="Logo CSS">
+            <h2>CSS</h2>
+        </a>
+
+        <a href="Docs/cours_JS.html" class="card">
+            <img src="Image/js_logo.jpg" alt="Logo JS">
+            <h2>JS</h2>
+        </a>
     </div>
 
-    <section>
-        <p>Descriptif du cours : Bienvenue dans le module de programmation web.</p> </section>
+    <div class="about-section">
+        <h2>À propos</h2>
+        <p>Bienvenue sur l'espace centralisé du cours de Programmation Web. Ce site regroupe l'ensemble des notions, des fiches de synthèse et des travaux pratiques pour HTML5, CSS3 et JavaScript.</p>
+    </div>
 
-    <nav>
-        <h2>Sommaire du cours Web</h2>
-        <ol>
-            <li><a href="Docs/cours_HTML.html">COURS ET TP HTML</a></li> <li><a href="Docs/cours_CSS.html">COURS ET TP CSS</a></li> <li><a href="Docs/cours_JS.html">COURS ET TP JS</a></li> </ol>
-    </nav>
 </body>
 </html>
