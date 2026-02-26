@@ -1,0 +1,141 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP6 - Les Tableaux HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>TP6 : Utilisation des balises Tableau, Image et Lien</h1>
+        <p>BTS SIO - SISR/SLAM</p>
+        <nav>
+            <ul>
+                <li><a href="#exo1">Exercice 1 : Calendrier Scolaire</a></li>
+                <li><a href="#exo2">Exercice 2 : Langages Serveur</a></li>
+                <li><a href="#exo3">Exercice 3 : Avril 2024</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="exo1">
+            <h2>Exercice 1 : Calendrier Scolaire 2017-2018</h2>
+            <table>
+                <caption>Dates des vacances par zone [cite: 13, 21, 24, 27]</caption>
+                <thead>
+                    <tr>
+                        <th>Période</th>
+                        <th>Zone A (Lyon, Bordeaux...)</th>
+                        <th>Zone B (Aix, Lille, Nice...)</th>
+                        <th>Zone C (Paris, Toulouse...)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Prérentrée des enseignants</td>
+                        <td colspan="3">Vendredi 1er septembre 2017 [cite: 28]</td>
+                    </tr>
+                    <tr>
+                        <td>Rentrée des élèves</td>
+                        <td colspan="3">Lundi 4 septembre 2017 [cite: 29]</td>
+                    </tr>
+                    <tr>
+                        <td>Vacances de la Toussaint</td>
+                        <td colspan="3">Du 21 octobre au 6 novembre 2017 [cite: 30]</td>
+                    </tr>
+                    <tr>
+                        <td>Vacances d'hiver</td>
+                        <td>Du 10 fév au 26 fév [cite: 32]</td>
+                        <td>Du 24 fév au 12 mars [cite: 33]</td>
+                        <td>Du 17 fév au 5 mars [cite: 35]</td>
+                    </tr>
+                    <tr>
+                        <td>Vacances de printemps</td>
+                        <td>Du 7 avril au 23 avril [cite: 38]</td>
+                        <td>Du 21 avril au 7 mai [cite: 34]</td>
+                        <td>Du 14 avril au 30 avril [cite: 36]</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <section id="exo2">
+            <h2>Exercice 2 : Langages de script côté serveur</h2>
+            <table>
+                <caption>Tableau comparatif des langages [cite: 42, 53]</caption>
+                <thead>
+                    <tr>
+                        <th>Logo</th>
+                        <th>Nom abrégé</th>
+                        <th>Nom complet</th>
+                        <th>Année</th>
+                        <th>Site Web</th>
+                        <th>Exemple</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="https://www.php.net/images/logos/new-php-logo.png" target="_blank">
+                                <img src="https://www.php.net/images/logos/new-php-logo.png" width="50" alt="PHP" title="Cliquez pour agrandir [cite: 46, 50]">
+                            </a>
+                        </td>
+                        <td>PHP</td>
+                        <td>Hypertext Preprocessor</td>
+                        <td>1995</td>
+                        <td title="Lien vers le site officiel [cite: 50]">
+                            <a href="https://www.php.net" target="_blank">Site PHP [cite: 48, 49]</a>
+                        </td>
+                        <td><code>echo "Hello";</code> [cite: 51]</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://www.python.org/static/community_logos/python-logo.png" target="_blank">
+                                <img src="https://www.python.org/static/community_logos/python-logo.png" width="50" alt="Python">
+                            </a>
+                        </td>
+                        <td>Python</td>
+                        <td>Python Software Foundation</td>
+                        <td>1991</td>
+                        <td><a href="https://www.python.org" target="_blank">Site Python</a></td>
+                        <td><code>print("Hello")</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <section id="exo3">
+            <h2>Exercice 3 : Calendrier Mensuel</h2>
+            <table class="calendar">
+                <caption>Avril 2024 [cite: 55, 56]</caption>
+                <thead>
+                    <tr>
+                        <th>Lu</th><th>Ma</th><th>Me</th><th>Je</th><th>Ve</th><th>Sa</th><th>Di</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+                    <tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr>
+                    <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr>
+                    <tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr>
+                    <tr><td>29</td><td>30</td><td></td><td></td><td></td><td></td><td></td></tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2023 - BTS SIO Algoud-Laffemas [cite: 2, 3]</p>
+    </footer>
+
+</body>
+</html>
