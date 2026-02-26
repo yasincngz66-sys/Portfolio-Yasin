@@ -12,9 +12,76 @@
     <a href="../index.html">Retour au menu principal</a>
 </body>
 </html>
-<h2>EXERCICE 1 : Glossaire des balises HTML</h2>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossaire HTML</title>
+    <style>
 
-    <table border="1" width="100%">
+        .styled-table {
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.9em;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-width: 400px;
+            width: 100%;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+            border-radius: 5px 5px 0 0;
+            overflow: hidden; 
+        }
+
+
+        .styled-table thead tr {
+            background-color: #009879; 
+            color: #ffffff;
+            text-align: left;
+        }
+
+
+        .styled-table th,
+        .styled-table td {
+            padding: 12px 15px;
+        }
+
+
+        .styled-table tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        .styled-table tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        .styled-table tbody tr:last-of-type {
+            border-bottom: 2px solid #009879;
+        }
+
+
+        .styled-table tbody tr:hover {
+            background-color: #f1f1f1;
+            font-weight: bold;
+            color: #009879;
+            cursor: default;
+        }
+
+
+        code {
+            background-color: #eee;
+            color: #d63384; 
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "Consolas", "Monaco", monospace;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>EXERCICE 1 : Glossaire des balises HTML</h2>
+
+    <table class="styled-table">
         <thead>
             <tr>
                 <th>Balise</th>
@@ -22,125 +89,121 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td><code>&lt;!DOCTYPE html&gt;</code></td>
-                <td>Déclaration obligatoire au début indiquant qu'il s'agit d'un document HTML5.</td>
-            </tr>
-            <tr>
-                <td><code>&lt;html&gt;</code></td>
-                <td>Élément racine de la page. Contient tout le code.</td>
-            </tr>
-            <tr>
-                <td><code>&lt;head&gt;</code></td>
-                <td>En-tête contenant les informations invisibles (métadonnées, liens fichiers).</td>
-            </tr>
-            <tr>
-                <td><code>&lt;meta&gt;</code></td>
-                <td>Fournit des métadonnées comme l'encodage (UTF-8) ou le viewport.</td>
-            </tr>
-            <tr>
-                <td><code>&lt;title&gt;</code></td>
-                <td>Définit le titre de l'onglet du navigateur.</td>
-            </tr>
-            <tr>
-                <td><code>&lt;link&gt;</code></td>
-                <td>Lie des ressources externes (feuilles de style CSS, favicon).</td>
-            </tr>
-            <tr>
-                <td><code>&lt;body&gt;</code></td>
-                <td>Corps de la page contenant tous les éléments visibles.</td>
-            </tr>
-            <tr>
-                <td><code>&lt;header&gt;</code></td>
-                <td>En-tête d'une section ou de la page (souvent pour le logo/menu).</td>
-            </tr>
-            <tr>
-                <td><code>&lt;div&gt;</code></td>
-                <td>Conteneur générique de type bloc pour diviser la page.</td>
-            </tr>
-            <tr>
-                <td><code>&lt;article&gt;</code></td>
-                <td>Contenu indépendant et autonome (ex: un article de blog).</td>
-            </tr>
-            <tr>
-                <td><code>&lt;h1&gt;</code></td>
-                <td>Titre principal (le plus important).</td>
-            </tr>
-            <tr>
-                <td><code>&lt;h3&gt;, &lt;h4&gt;</code></td>
-                <td>Sous-titres de niveaux inférieurs.</td>
-            </tr>
-            <tr>
-                <td><code>&lt;p&gt;</code></td>
-                <td>Paragraphe de texte.</td>
-            </tr>
-            <tr>
-                <td><code>&lt;ul&gt;</code></td>
-                <td>Liste à puces (non ordonnée).</td>
-            </tr>
-            <tr>
-                <td><code>&lt;footer&gt;</code></td>
-                <td>Pied de page (mentions légales, fin de page).</td>
-            </tr>
-            <tr>
-                <td><code>&lt;script&gt;</code></td>
-                <td>Intègre du code JavaScript pour l'interactivité.</td>
-            </tr>
-            <tr>
-                <td><code>&lt;!-- --&gt;</code></td>
-                <td>Commentaire (non affiché à l'écran).</td>
-            </tr>
-        </tbody>
+    <tr>
+        <td><code>&lt;!DOCTYPE html&gt;</code></td>
+        <td>Indique au navigateur que la page utilise la dernière version de HTML (HTML5).</td>
+    </tr>
+    <tr>
+        <td><code>&lt;html&gt;</code></td>
+        <td>La racine du document : elle englobe tout le code de la page.</td>
+    </tr>
+    <tr>
+        <td><code>&lt;head&gt;</code></td>
+        <td>La tête du fichier : zone de configuration invisible pour le visiteur (réglages, liens).</td>
+    </tr>
+    <tr>
+        <td><code>&lt;meta&gt;</code></td>
+        <td>Fournit des réglages techniques (comme les accents ou l'adaptation aux mobiles).</td>
+    </tr>
+    <tr>
+        <td><code>&lt;title&gt;</code></td>
+        <td>Le texte qui s'affiche tout en haut dans l'onglet du navigateur.</td>
+    </tr>
+    <tr>
+        <td><code>&lt;link&gt;</code></td>
+        <td>Fait le pont vers un fichier externe, généralement pour le design (CSS).</td>
+    </tr>
+    <tr>
+        <td><code>&lt;body&gt;</code></td>
+        <td>Le corps de la page : tout ce qui est affiché à l'écran pour l'utilisateur.</td>
+    </tr>
+    <tr>
+        <td><code>&lt;header&gt;</code></td>
+        <td>L'introduction d'une page ou d'une section.</td>
+    </tr>
+    <tr>
+        <td><code>&lt;div&gt;</code></td>
+        <td>Une boîte vide utilisée pour regrouper des éléments afin de les mettre en page.</td>
+    </tr>
+    <tr>
+        <td><code>&lt;article&gt;</code></td>
+        <td>Bloc de contenu autonome qui a du sens même lu seul .</td>
+    </tr>
+    <tr>
+        <td><code>&lt;h1&gt;</code></td>
+        <td>Le titre le plus important de la page.</td>
+    </tr>
+    <tr>
+        <td><code>&lt;p&gt;</code></td>
+        <td>Balise standard pour écrire un paragraphe de texte.</td>
+    </tr>
+    <tr>
+        <td><code>&lt;ul&gt;</code></td>
+        <td>Crée une liste d'éléments marqués par des puces.</td>
+    </tr>
+    <tr>
+        <td><code>&lt;footer&gt;</code></td>
+        <td>Le pied de page.</td>
+    </tr>
+    <tr>
+        <td><code>&lt;script&gt;</code></td>
+        <td>Permet d'ajouter de l'interactivité ou des animations via le langage JavaScript.</td>
+    </tr>
+    </tbody>
     </table>
-
-    <br><br>
-    <hr> <br><br>
 
     <h2>EXERCICE 2 : Reproduction du texte SQL</h2>
 
     <h1>1. Le langage SQL</h1>
 
     <h2>1.1. Définition</h2>
-    <p>
-        Le langage <strong>SQL</strong> (<strong>Structured Query Language</strong> ou Langage de requêtes structuré) est un langage comprenant à lui seul l'ensemble des ordres nécessaires à la création et à la gestion d'une base de données relationnelle. Il a été créé en 1986 et est en fait l'aboutissement de plusieurs langages (Sequel en 1977, System/R, ...) créés depuis l'apparition du modèle relationnel en 1970 (le modèle relationnel a été inventé par Mr Codd, un mathématicien de chez IBM). L'utilisation du langage SQL suppose obligatoirement que les données aient été définies selon le modèle relationnel au sein d'un SGBDR (Oracle ©, SQLServer, mySQL, PostgreSQL...).
-    </p>
+
+    <p>Le langage SQL (Structured Query Language ou Langage de requêtes structuré) est un langage comprenant à lui seul l'ensemble des ordres nécessaires à la création et à la gestion d'une base de données relationnelle.</p>
+
+    <p>Il a été créé en 1986 et est en fait l'aboutissement de plusieurs langages (Sequel en 1977, System/R, ...) créés depuis l'apparition du modèle relationnel en 1970 (le modèle relationnel a été inventé par Mr Codd, un mathématicien de chez IBM).</p>
+
+    <p>L'utilisation du langage SQL suppose obligatoirement que les données aient été définies selon le modèle relationnel au sein d'un SGBDR (Oracle, SQLServer, mySQL, PostgreSQL...).</p>
 
     <h2>1.2. Les différentes normes utilisées</h2>
-    <p>
-        Il existe aujourd'hui plusieurs normes relatives à l'utilisation du <u>langage SQL</u>. La différence entre ces deux normes se situe principalement dans l'écriture des jointures et dans l'ajout de fonctionnalités. :
-    </p>
+
+    <p>Il existe aujourd'hui plusieurs normes relatives à l'utilisation du langage SQL.</p>
+
+    <p>La différence entre ces deux normes se situe principalement dans l'écriture des jointures et dans l'ajout de fonctionnalités :</p>
 
     <ul>
-        <li>La norme <strong>SQL 89</strong> qui est encore très utilisée actuellement.</li>
-        <li>La norme <strong>SQL 92</strong>.</li>
-        <li>Aujourd'hui <strong>SQL 2011</strong>.</li>
+        <li>La norme SQL 89 qui est encore très utilisée actuellement.</li>
+        <li>La norme SQL 92.</li>
+        <li>Aujourd'hui SQL 2011.</li>
     </ul>
 
-    <p>
-        Bien qu'il existe des normes il peut y avoir des différences entre SGBDR dans la syntaxe. Ainsi on peut lire sur le site de <strong><u>PostgreSQL</u></strong>:
-    </p>
+    <p>Bien qu'il existe des normes il peut y avoir des différences entre SGBDR dans la syntaxe.</p>
 
-    <ul>
-        <li>"Le développement de <em>PostgreSQL™</em> respecte le standard en vigueur, tant que celui-ci ne s'oppose pas aux fonctionnalités traditionnelles ou au bon sens..."</li>
-        <li>"SQL-92 définit trois niveaux de conformité : basique (<em>ENTRY</em>), intermédiaire (<em>INTERMEDIATE</em>) et complète (<em>FULL</em>). La majorité des systèmes de gestion de bases de données se prétendaient compatibles au standard SQL dès lors qu'ils se conformaient au niveau Entry"</li>
-    </ul>
+    <p>Ainsi on peut lire sur le site de PostgreSQL :</p>
+
+    <blockquote>
+        "Le développement de PostgreSQL respecte le standard en vigueur, tant que celui-ci ne s'oppose pas aux fonctionnalités traditionnelles ou au bon sens..."
+    </blockquote>
+
+    <blockquote>
+        "SQL-92 définit trois niveaux de conformité: basique (ENTRY), intermédiaire (INTERMEDIATE) et complète (FULL). La majorité des systèmes de gestion de bases de données se prétendaient compatibles au standard SQL dès lors qu'ils se conformaient au niveau Entry"
+    </blockquote>
 
     <h1>2. Le modèle de données utilisé dans le cours</h1>
 
     <h2>2.1. Le modèle entité-association (ou MCD) d'un établissement hospitalier</h2>
-    
+
     <h2>2.2. Le modèle relationnel (ou MRD) d'un établissement hospitalier</h2>
 
     <h2>2.3. La description textuelle des tables utilisées</h2>
 
     <p>
-        <mark><strong>fonction_personnel</strong></mark> (<u>code_fonction</u>, libelle_fonction)<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;Clé primaire : <em>code_fonction</em>
+        <strong>fonction personnel</strong> (code fonction, libelle fonction)<br>
+        Clé primaire code fonction
     </p>
 
     <p>
-        <mark><strong>service</strong></mark> (<u>num_service</u>, libelle_service, capacite_accueil, date_ouverture)<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;Clé primaire : <em>num_service</em>
+        <strong>service</strong> (num service, libelle service, capacite accueil, date_ouverture)<br>
+        Clé primaire : num service
     </p>
 
     <br><br>
