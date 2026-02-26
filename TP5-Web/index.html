@@ -1,141 +1,205 @@
-
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TP6 - Les Tableaux HTML</title>
+    <title>TP6 - Les Tableaux</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>TP6 : Utilisation des balises Tableau, Image et Lien</h1>
-        <p>BTS SIO - SISR/SLAM</p>
-        <nav>
-            <ul>
-                <li><a href="#exo1">Exercice 1 : Calendrier Scolaire</a></li>
-                <li><a href="#exo2">Exercice 2 : Langages Serveur</a></li>
-                <li><a href="#exo3">Exercice 3 : Avril 2024</a></li>
-            </ul>
-        </nav>
-    </header>
+    <h2>Exercice 1</h2>
+    <table>
+        <thead>
+            <tr>
+                <th class="bg-dark-grey txt-white txt-center" rowspan="2">Vacances</th>
+                <th class="bg-orange txt-white txt-center">Zone A</th>
+                <th class="bg-blue txt-white txt-center">Zone B</th>
+                <th class="bg-green txt-white txt-center">Zone C</th>
+            </tr>
+            <tr>
+                <td class="bg-light-orange txt-center" style="font-size: 11px;">
+                    <span class="bold">Académies :</span><br>
+                    Besançon, Bordeaux,<br>Clermont-Ferrand, Dijon,<br>Grenoble, Limoges, Lyon,<br>Poitiers
+                </td>
+                <td class="bg-light-blue txt-center" style="font-size: 11px;">
+                    <span class="bold">Académies :</span><br>
+                    Aix-Marseille, Amiens,<br>Caen, Lille, Nancy-Metz,<br>Nantes, Nice, Orléans-<br>Tours, Reims, Rennes,<br>Rouen, Strasbourg
+                </td>
+                <td class="bg-light-green txt-center" style="font-size: 11px;">
+                    <span class="bold">Académies :</span><br>
+                    Créteil, Montpellier, Paris,<br>Toulouse, Versailles
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="bg-light-grey bold">Prérentrée des<br>enseignants</td>
+                <td colspan="3" class="txt-center">Reprise des cours : vendredi 1er septembre 2017</td>
+            </tr>
+            <tr>
+                <td class="bg-light-grey bold">Rentrée scolaire des<br>élèves</td>
+                <td colspan="3" class="txt-center">Reprise des cours : lundi 4 septembre 2017</td>
+            </tr>
+            <tr>
+                <td class="bg-light-grey bold">Vacances de la<br>Toussaint</td>
+                <td colspan="3" class="txt-center">Fin des cours : samedi 21 octobre 2017<br>Reprise des cours : lundi 6 novembre 2017</td>
+            </tr>
+            <tr>
+                <td class="bg-light-grey bold">Vacances de Noël</td>
+                <td colspan="3" class="txt-center">Fin des cours : samedi 23 décembre 2017<br>Reprise des cours : lundi 8 janvier 2018</td>
+            </tr>
+            <tr>
+                <td class="bg-light-grey bold">Vacances d'hiver</td>
+                <td class="bg-light-orange txt-center">Fin des cours :<br>samedi 10 février 2018<br>Reprise des cours :<br>lundi 26 février 2018</td>
+                <td class="bg-light-blue txt-center">Fin des cours :<br>samedi 24 février 2018<br>Reprise des cours :<br>lundi 12 mars 2018</td>
+                <td class="bg-light-green txt-center">Fin des cours :<br>samedi 17 février 2018<br>Reprise des cours :<br>lundi 5 mars 2018</td>
+            </tr>
+            <tr>
+                <td class="bg-light-grey bold">Vacances de<br>printemps</td>
+                <td class="bg-light-orange txt-center">Fin des cours :<br>samedi 7 avril 2018<br>Reprise des cours :<br>lundi 23 avril 2018</td>
+                <td class="bg-light-blue txt-center">Fin des cours :<br>samedi 21 avril 2018<br>Reprise des cours :<br>lundi 7 mai 2018</td>
+                <td class="bg-light-green txt-center">Fin des cours :<br>samedi 14 avril 2018<br>Reprise des cours :<br>lundi 30 avril 2018</td>
+            </tr>
+            <tr>
+                <td class="bg-light-grey bold">Vacances d'été</td>
+                <td colspan="3" class="txt-center">Fin des cours : samedi 7 juillet 2018</td>
+            </tr>
+        </tbody>
+    </table>
 
-    <main>
-        <section id="exo1">
-            <h2>Exercice 1 : Calendrier Scolaire 2017-2018</h2>
-            <table>
-                <caption>Dates des vacances par zone [cite: 13, 21, 24, 27]</caption>
-                <thead>
-                    <tr>
-                        <th>Période</th>
-                        <th>Zone A (Lyon, Bordeaux...)</th>
-                        <th>Zone B (Aix, Lille, Nice...)</th>
-                        <th>Zone C (Paris, Toulouse...)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Prérentrée des enseignants</td>
-                        <td colspan="3">Vendredi 1er septembre 2017 [cite: 28]</td>
-                    </tr>
-                    <tr>
-                        <td>Rentrée des élèves</td>
-                        <td colspan="3">Lundi 4 septembre 2017 [cite: 29]</td>
-                    </tr>
-                    <tr>
-                        <td>Vacances de la Toussaint</td>
-                        <td colspan="3">Du 21 octobre au 6 novembre 2017 [cite: 30]</td>
-                    </tr>
-                    <tr>
-                        <td>Vacances d'hiver</td>
-                        <td>Du 10 fév au 26 fév [cite: 32]</td>
-                        <td>Du 24 fév au 12 mars [cite: 33]</td>
-                        <td>Du 17 fév au 5 mars [cite: 35]</td>
-                    </tr>
-                    <tr>
-                        <td>Vacances de printemps</td>
-                        <td>Du 7 avril au 23 avril [cite: 38]</td>
-                        <td>Du 21 avril au 7 mai [cite: 34]</td>
-                        <td>Du 14 avril au 30 avril [cite: 36]</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+    <h2>Exercice 2</h2>
+    <table>
+        <caption>Langages de script côté serveur</caption>
+        <thead>
+            <tr>
+                <th class="table-header">Logo</th>
+                <th class="table-header">Nom abrégé</th>
+                <th class="table-header">Nom complet</th>
+                <th class="table-header">Année de sortie</th>
+                <th class="table-header">Site web de référence</th>
+                <th class="table-header">Exemple de code</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="txt-center" title="Logo PHP">
+                    <a href="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" width="50" alt="PHP">
+                    </a>
+                </td>
+                <td class="txt-center">PHP</td>
+                <td class="txt-center">Hypertext Preprocessor</td>
+                <td class="txt-center">1995</td>
+                <td class="txt-center" title="Aller sur le site officiel de PHP">
+                    <a href="https://www.php.net" target="_blank">php.net</a>
+                </td>
+                <td><code>echo "Hello World";</code></td>
+            </tr>
+            <tr>
+                <td class="txt-center" title="Logo JSP">
+                    <a href="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/120px-Java_programming_language_logo.svg.png" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/120px-Java_programming_language_logo.svg.png" width="30" alt="JSP">
+                    </a>
+                </td>
+                <td class="txt-center">JSP</td>
+                <td class="txt-center">Jakarta Server Pages</td>
+                <td class="txt-center">1999</td>
+                <td class="txt-center" title="Aller sur le site de JSP">
+                    <a href="https://eclipse.ee4j.org/jsp" target="_blank">eclipse.ee4j.org/jsp</a>
+                </td>
+                <td><code>out.print("Hello");</code></td>
+            </tr>
+            <tr>
+                <td class="txt-center" title="Logo ASP">
+                    <a href="https://upload.wikimedia.org/wikipedia/commons/e/ee/.NET_Core_Logo.svg" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/.NET_Core_Logo.svg" width="40" alt="ASP.NET">
+                    </a>
+                </td>
+                <td class="txt-center">ASP</td>
+                <td class="txt-center">Active Server Pages</td>
+                <td class="txt-center">1996</td>
+                <td class="txt-center" title="Aller sur le site de ASP.NET">
+                    <a href="https://dotnet.microsoft.com/apps/aspnet" target="_blank">asp.net</a>
+                </td>
+                <td><code>Response.Write("Hello")</code></td>
+            </tr>
+            <tr>
+                <td class="txt-center" title="Logo Ruby">
+                    <a href="https://upload.wikimedia.org/wikipedia/commons/7/73/Ruby_logo.svg" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Ruby_logo.svg" width="35" alt="Ruby">
+                    </a>
+                </td>
+                <td class="txt-center">Ruby</td>
+                <td class="txt-center">Ruby</td>
+                <td class="txt-center">1995</td>
+                <td class="txt-center" title="Aller sur le site de Ruby">
+                    <a href="https://www.ruby-lang.org" target="_blank">ruby-lang.org</a>
+                </td>
+                <td><code>puts 'Hello'</code></td>
+            </tr>
+            <tr>
+                <td class="txt-center" title="Logo Perl">
+                    <a href="https://upload.wikimedia.org/wikipedia/en/5/56/Perl_language_logo.svg" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/5/56/Perl_language_logo.svg" width="40" alt="Perl">
+                    </a>
+                </td>
+                <td class="txt-center">Perl</td>
+                <td class="txt-center">Practical Extraction and Report Language</td>
+                <td class="txt-center">1987</td>
+                <td class="txt-center" title="Aller sur le site de Perl">
+                    <a href="https://www.perl.org" target="_blank">perl.org</a>
+                </td>
+                <td><code>print "Hello\n";</code></td>
+            </tr>
+            <tr>
+                <td class="txt-center" title="Logo Python">
+                    <a href="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" width="40" alt="Python">
+                    </a>
+                </td>
+                <td class="txt-center">Python</td>
+                <td class="txt-center">Python</td>
+                <td class="txt-center">1991</td>
+                <td class="txt-center" title="Aller sur le site de Python">
+                    <a href="https://www.python.org" target="_blank">python.org</a>
+                </td>
+                <td><code>print("Hello")</code></td>
+            </tr>
+        </tbody>
+    </table>
 
-        <hr>
-
-        <section id="exo2">
-            <h2>Exercice 2 : Langages de script côté serveur</h2>
-            <table>
-                <caption>Tableau comparatif des langages [cite: 42, 53]</caption>
-                <thead>
-                    <tr>
-                        <th>Logo</th>
-                        <th>Nom abrégé</th>
-                        <th>Nom complet</th>
-                        <th>Année</th>
-                        <th>Site Web</th>
-                        <th>Exemple</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <a href="https://www.php.net/images/logos/new-php-logo.png" target="_blank">
-                                <img src="https://www.php.net/images/logos/new-php-logo.png" width="50" alt="PHP" title="Cliquez pour agrandir [cite: 46, 50]">
-                            </a>
-                        </td>
-                        <td>PHP</td>
-                        <td>Hypertext Preprocessor</td>
-                        <td>1995</td>
-                        <td title="Lien vers le site officiel [cite: 50]">
-                            <a href="https://www.php.net" target="_blank">Site PHP [cite: 48, 49]</a>
-                        </td>
-                        <td><code>echo "Hello";</code> [cite: 51]</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="https://www.python.org/static/community_logos/python-logo.png" target="_blank">
-                                <img src="https://www.python.org/static/community_logos/python-logo.png" width="50" alt="Python">
-                            </a>
-                        </td>
-                        <td>Python</td>
-                        <td>Python Software Foundation</td>
-                        <td>1991</td>
-                        <td><a href="https://www.python.org" target="_blank">Site Python</a></td>
-                        <td><code>print("Hello")</code></td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <hr>
-
-        <section id="exo3">
-            <h2>Exercice 3 : Calendrier Mensuel</h2>
-            <table class="calendar">
-                <caption>Avril 2024 [cite: 55, 56]</caption>
-                <thead>
-                    <tr>
-                        <th>Lu</th><th>Ma</th><th>Me</th><th>Je</th><th>Ve</th><th>Sa</th><th>Di</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
-                    <tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr>
-                    <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr>
-                    <tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr>
-                    <tr><td>29</td><td>30</td><td></td><td></td><td></td><td></td><td></td></tr>
-                </tbody>
-            </table>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2023 - BTS SIO Algoud-Laffemas [cite: 2, 3]</p>
-    </footer>
+    <h2>Exercice 3</h2>
+    <table class="calendrier">
+        <caption>Avril 2024</caption>
+        <thead>
+            <tr>
+                <th class="table-header">Lu</th>
+                <th class="table-header">Ma</th>
+                <th class="table-header">Me</th>
+                <th class="table-header">Je</th>
+                <th class="table-header">Ve</th>
+                <th class="table-header">Sa</th>
+                <th class="table-header">Di</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td>
+            </tr>
+            <tr>
+                <td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td>
+            </tr>
+            <tr>
+                <td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td>
+            </tr>
+            <tr>
+                <td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td>
+            </tr>
+            <tr>
+                <td>29</td><td>30</td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+        </tbody>
+    </table>
 
 </body>
 </html>
