@@ -4,165 +4,151 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TP CSS – Zoning d'une page web</title>
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background-color: #1a1a2e;
+      font-family: 'Segoe UI', sans-serif;
+      color: #e0e0e0;
+      min-height: 100vh;
+      padding: 40px 60px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #ffffff;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      color: #8899aa;
+      margin-bottom: 40px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .card {
+      background-color: #1e2a3a;
+      border: 1px solid #2a3a4a;
+      border-radius: 12px;
+      padding: 24px;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      transition: border-color 0.25s, transform 0.2s, box-shadow 0.25s;
+      min-height: 220px;
+    }
+
+    .card:hover {
+      border-color: #3a8fc0;
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+    }
+
+    .badge {
+      display: inline-block;
+      background-color: #1f4e6e;
+      color: #7ecfee;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 20px;
+      width: fit-content;
+      letter-spacing: 0.3px;
+    }
+
+    .card-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.3;
+    }
+
+    .card-desc {
+      font-size: 13.5px;
+      color: #99aabb;
+      line-height: 1.6;
+      flex: 1;
+    }
+
+    .card-link {
+      font-size: 13px;
+      color: #7ecfee;
+      font-weight: 600;
+      margin-top: 8px;
+    }
+
+    .card:hover .card-link {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
 
-  <header>
-    <div>
-      <p class="tp-label">BTS SIO</p>
-      <h1>TP CSS <span>Zoning</span></h1>
-    </div>
-    <div class="sub">
-      <p><Y class="cengiz"></Y></p>
-      <p>LYCÉE ALGOUD-LAFFEMAS</p>
-    </div>
-  </header>
+  <h1>TP CSS — Zoning d'une page web</h1>
+  <p class="subtitle">BTS SIO — Module B1.WEB · S. GIBERT · 14/03/2022</p>
 
-  <main>
-    <p class="section-title">Sélectionnez une maquette</p>
+  <div class="grid">
 
-    <div class="grid">
+    <a class="card" href="Maquette_1/index.html">
+      <span class="badge">HTML / CSS</span>
+      <p class="card-title">Maquette 1 : Header + 2 colonnes</p>
+      <p class="card-desc">Zone du Haut avec une colonne de gauche et une zone centrale. Structure simple en deux zones latérales.</p>
+      <span class="card-link">Voir le zoning →</span>
+    </a>
 
-      <a class="card" href="Maquette_1/index.html">
-        <div class="preview prev-1">
-          <div class="ph"></div>
-          <div class="pbody">
-            <div class="pl"></div>
-            <div class="pm"></div>
-          </div>
-        </div>
-        <div class="card-info">
-          <div>
-            <p class="card-num">01 / 07</p>
-            <p class="card-name">Maquette 1</p>
-          </div>
-          <div class="arrow">→</div>
-        </div>
-      </a>
+    <a class="card" href="Maquette_2/index.html">
+      <span class="badge">HTML / CSS</span>
+      <p class="card-title">Maquette 2 : Header + 3 colonnes</p>
+      <p class="card-desc">Zone du Haut avec trois colonnes : gauche, milieu et droite. Mise en page classique en trois zones.</p>
+      <span class="card-link">Voir le zoning →</span>
+    </a>
 
-      <!-- Maquette 2 -->
-      <a class="card" href="Maquette_2/index.html">
-        <div class="preview prev-2">
-          <div class="ph"></div>
-          <div class="pbody">
-            <div class="pl"></div>
-            <div class="pm"></div>
-            <div class="pr"></div>
-          </div>
-        </div>
-        <div class="card-info">
-          <div>
-            <p class="card-num">02 / 07</p>
-            <p class="card-name">Maquette 2</p>
-          </div>
-          <div class="arrow">→</div>
-        </div>
-      </a>
+    <a class="card" href="Maquette_3/index.html">
+      <span class="badge">HTML / CSS</span>
+      <p class="card-title">Maquette 3 : 2 colonnes + Footer</p>
+      <p class="card-desc">Deux colonnes principales côte à côte (gauche et droite) avec un pied de page en bas de page.</p>
+      <span class="card-link">Voir le zoning →</span>
+    </a>
 
-      <!-- Maquette 3 -->
-      <a class="card" href="Maquette_3/index.html">
-        <div class="preview prev-3" style="flex-direction:column;">
-          <div class="pbody"></div>
-          <div class="pf"></div>
-        </div>
-        <div class="card-info">
-          <div>
-            <p class="card-num">03 / 07</p>
-            <p class="card-name">Maquette 3</p>
-          </div>
-          <div class="arrow">→</div>
-        </div>
-      </a>
+    <a class="card" href="Maquette_4/index.html">
+      <span class="badge">HTML / CSS</span>
+      <p class="card-title">Maquette 4 : Haut + Menu + Milieu + Bas</p>
+      <p class="card-desc">Quatre zones empilées verticalement : en-tête, barre de navigation, contenu principal et pied de page.</p>
+      <span class="card-link">Voir le zoning →</span>
+    </a>
 
-      <!-- Maquette 4 -->
-      <a class="card" href="Maquette_4/index.html">
-        <div class="preview prev-4" style="flex-direction:column;">
-          <div class="ph"></div>
-          <div class="pnav"></div>
-          <div class="pm"></div>
-          <div class="pf"></div>
-        </div>
-        <div class="card-info">
-          <div>
-            <p class="card-num">04 / 07</p>
-            <p class="card-name">Maquette 4</p>
-          </div>
-          <div class="arrow">→</div>
-        </div>
-      </a>
+    <a class="card" href="Maquette_5/index.html">
+      <span class="badge">HTML / CSS</span>
+      <p class="card-title">Maquette 5 : Haut + Menu + Grille 2×2</p>
+      <p class="card-desc">En-tête et menu en haut, suivis d'une grille 2×2 pour le contenu principal, et un footer.</p>
+      <span class="card-link">Voir le zoning →</span>
+    </a>
 
-      <!-- Maquette 5 -->
-      <a class="card" href="Maquette_5/index.html">
-        <div class="preview prev-5" style="flex-direction:column;">
-          <div class="ph"></div>
-          <div class="pnav"></div>
-          <div class="pgrid">
-            <div class="pa"></div>
-            <div class="pb"></div>
-            <div class="pc"></div>
-            <div class="pd"></div>
-          </div>
-          <div class="pf"></div>
-        </div>
-        <div class="card-info">
-          <div>
-            <p class="card-num">05 / 07</p>
-            <p class="card-name">Maquette 5</p>
-          </div>
-          <div class="arrow">→</div>
-        </div>
-      </a>
+    <a class="card" href="Maquette_6/index.html">
+      <span class="badge">HTML / CSS</span>
+      <p class="card-title">Maquette 6 : Grille 4×4 de zones PZ</p>
+      <p class="card-desc">Zone haute, menu, puis une grille 4×4 de seize zones PZ numérotées, et un pied de page.</p>
+      <span class="card-link">Voir le zoning →</span>
+    </a>
 
-      <!-- Maquette 6 -->
-      <a class="card" href="Maquette_6/index.html">
-        <div class="preview prev-6" style="flex-direction:column;">
-          <div class="ph"></div>
-          <div class="pnav"></div>
-          <div class="pgrid">
-            <div class="g-odd"></div>  <div class="g-even"></div> <div class="g-odd"></div>  <div class="g-even"></div>
-            <div class="g-even"></div> <div class="g-odd"></div>  <div class="g-even"></div> <div class="g-odd"></div>
-            <div class="g-odd"></div>  <div class="g-even"></div> <div class="g-odd"></div>  <div class="g-even"></div>
-            <div class="g-even"></div> <div class="g-odd"></div>  <div class="g-even"></div> <div class="g-odd"></div>
-          </div>
-          <div class="pf"></div>
-        </div>
-        <div class="card-info">
-          <div>
-            <p class="card-num">06 / 07</p>
-            <p class="card-name">Maquette 6</p>
-          </div>
-          <div class="arrow">→</div>
-        </div>
-      </a>
+    <a class="card" href="Maquette_7/index.html">
+      <span class="badge">HTML / CSS</span>
+      <p class="card-title">Maquette 7 : Gauche + 5 colonnes + Droite</p>
+      <p class="card-desc">En-tête, puis une zone gauche fixe, cinq colonnes centrales (Z1 à Z5), une zone droite et un footer.</p>
+      <span class="card-link">Voir le zoning →</span>
+    </a>
 
-      <!-- Maquette 7 -->
-      <a class="card" href="Maquette_7/index.html">
-        <div class="preview prev-7" style="flex-direction:column;">
-          <div class="ph"></div>
-          <div class="pbody">
-            <div class="pl"></div>
-            <div class="pcols">
-              <div class="pcol"></div>
-              <div class="pcol"></div>
-              <div class="pcol"></div>
-              <div class="pcol"></div>
-              <div class="pcol"></div>
-            </div>
-            <div class="pr"></div>
-          </div>
-          <div class="pf"></div>
-        </div>
-        <div class="card-info">
-          <div>
-            <p class="card-num">07 / 07</p>
-            <p class="card-name">Maquette 7</p>
-          </div>
-          <div class="arrow">→</div>
-        </div>
-      </a>
-
-    </div>
-  </main>
+  </div>
 
 </body>
 </html>
