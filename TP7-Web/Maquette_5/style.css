@@ -14,45 +14,60 @@ body { display: flex; flex-direction: column; height: 100vh; }
   background-color: #9b59b6;
   color: white;
   padding: 8px;
-  height: 40px;
+  height: 35px;
   flex-shrink: 0;
 }
 
+/* Le conteneur principal est une grille 2 colonnes / 2 lignes
+   MAIS la colonne B est plus large que A, et C s'étend sur toute la largeur gauche */
 #conteneur {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.7fr;
   grid-template-rows: 1fr 1fr;
   flex: 1;
+  gap: 2px;
 }
 
+/* A : haut gauche */
 #zone-a {
-  background-color: #3498db;
+  background-color: #1abc9c;
   color: white;
   padding: 8px;
+  grid-column: 1;
+  grid-row: 1;
 }
 
+/* B : haut droite — plus grand */
 #zone-b {
   background-color: #e67e22;
   color: white;
   padding: 8px;
+  grid-column: 2;
+  grid-row: 1;
 }
 
+/* C : bas gauche */
 #zone-c {
   background-color: #bdc3c7;
   color: #333;
   padding: 8px;
+  grid-column: 1;
+  grid-row: 2;
 }
 
+/* D : bas droite — bleu vif */
 #zone-d {
   background-color: #2980b9;
   color: white;
   padding: 8px;
+  grid-column: 2;
+  grid-row: 2;
 }
 
 #bas {
   background-color: #f1c40f;
   color: #333;
   padding: 8px;
-  height: 40px;
+  height: 35px;
   flex-shrink: 0;
 }

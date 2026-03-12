@@ -6,8 +6,7 @@ body { display: flex; flex-direction: column; height: 100vh; }
   background-color: #e74c3c;
   color: white;
   padding: 8px;
-  height: 50px;
-  text-align: center;
+  height: 40px;
   flex-shrink: 0;
 }
 
@@ -16,25 +15,36 @@ body { display: flex; flex-direction: column; height: 100vh; }
   flex: 1;
 }
 
+/* Zone gauche bleue — largeur fixe */
 #zone-gauche {
-  background-color: #3498db;
+  background-color: #2980b9;
   color: white;
   padding: 8px;
-  width: 110px;
+  width: 100px;
   flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
 }
 
+/* Les 5 colonnes vertes au centre */
 #colonnes {
   display: flex;
   flex: 1;
+  flex-direction: column; /* chaque col occupe toute la hauteur */
+}
+
+/* On les affiche en ligne en réalité */
+#colonnes {
+  flex-direction: row;
 }
 
 .col {
   flex: 1;
-  background-color: #2ecc71;
+  background-color: #27ae60;
   color: white;
   padding: 8px;
   border-left: 2px solid white;
@@ -43,11 +53,12 @@ body { display: flex; flex-direction: column; height: 100vh; }
   justify-content: center;
 }
 
+/* Zone droite bleue — largeur fixe */
 #zone-droite {
-  background-color: #3498db;
+  background-color: #2980b9;
   color: white;
   padding: 8px;
-  width: 110px;
+  width: 100px;
   flex-shrink: 0;
   display: flex;
   align-items: center;
@@ -60,5 +71,6 @@ body { display: flex; flex-direction: column; height: 100vh; }
   padding: 8px;
   height: 50px;
   text-align: center;
+  line-height: 34px;
   flex-shrink: 0;
 }

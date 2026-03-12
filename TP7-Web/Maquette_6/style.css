@@ -3,20 +3,22 @@
 body { display: flex; flex-direction: column; height: 100vh; }
 
 #zone-haut {
-  background-color: #2c3e50;
+  background-color: #6a0dad;
   color: white;
   padding: 8px;
   text-align: center;
-  height: 50px;
+  height: 45px;
+  line-height: 29px;
   flex-shrink: 0;
 }
 
 #menu {
-  background-color: #e74c3c;
+  background-color: #3333cc;
   color: white;
-  padding: 6px;
+  padding: 8px;
   text-align: center;
-  height: 35px;
+  height: 30px;
+  line-height: 14px;
   flex-shrink: 0;
 }
 
@@ -25,9 +27,9 @@ body { display: flex; flex-direction: column; height: 100vh; }
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
   flex: 1;
-  gap: 2px;
-  padding: 2px;
-  background-color: #ecf0f1;
+  gap: 3px;
+  padding: 3px;
+  background-color: #ddd;
 }
 
 .pz {
@@ -35,17 +37,25 @@ body { display: flex; flex-direction: column; height: 100vh; }
   align-items: center;
   justify-content: center;
   color: white;
+  font-size: 11px;
   font-weight: bold;
 }
 
-.pz-odd  { background-color: #3498db; }
-.pz-even { background-color: #e67e22; }
+/* Rouge */
+.r  { background-color: #cc2222; }
+/* Orange/jaune */
+.o  { background-color: #e6a817; }
+/* Vert foncé */
+.g  { background-color: #1a7a1a; }
+/* Rouge foncé / bordeaux */
+.dk { background-color: #8b1a1a; }
 
 #zone-bas {
-  background-color: #bdc3c7;
+  background-color: #c8c8c8;
   color: #333;
   padding: 8px;
   text-align: center;
-  height: 40px;
+  height: 35px;
+  line-height: 19px;
   flex-shrink: 0;
 }
