@@ -1,61 +1,69 @@
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: monospace; font-size: 12px; }
+ * { margin: 0; padding: 0; box-sizing: border-box; }
 
-body { display: flex; flex-direction: column; height: 100vh; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
 
-#zone-haut {
-  background-color: #6a0dad;
-  color: white;
-  padding: 8px;
-  text-align: center;
-  height: 45px;
-  line-height: 29px;
-  flex-shrink: 0;
-}
+    .zone-haut {
+      background: #e74c3c;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+      flex-shrink: 0;
+    }
 
-#menu {
-  background-color: #3333cc;
-  color: white;
-  padding: 8px;
-  text-align: center;
-  height: 30px;
-  line-height: 14px;
-  flex-shrink: 0;
-}
+    .milieu {
+      display: flex;
+      flex: 1;
+    }
 
-#grille {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  flex: 1;
-  gap: 3px;
-  padding: 3px;
-  background-color: #ddd;
-}
+    .zone-gauche,
+    .zone-droite {
+      background: #3498db;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 120px;
+      flex-shrink: 0;
+      font-size: 14px;
+    }
 
-.pz {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 11px;
-  font-weight: bold;
-}
+    .centre {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
 
-/* Rouge */
-.r  { background-color: #cc2222; }
-/* Orange/jaune */
-.o  { background-color: #e6a817; }
-/* Vert foncé */
-.g  { background-color: #1a7a1a; }
-/* Rouge foncé / bordeaux */
-.dk { background-color: #8b1a1a; }
+    .colonnes {
+      flex: 1;
+      display: flex;
+    }
 
-#zone-bas {
-  background-color: #c8c8c8;
-  color: #333;
-  padding: 8px;
-  text-align: center;
-  height: 35px;
-  line-height: 19px;
-  flex-shrink: 0;
-}
+    .colonne {
+      flex: 1;
+      background: #2ecc71;
+      border-left: 2px solid #27ae60;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+    }
+
+    .colonne:first-child {
+      border-left: none;
+    }
+
+    .zone-bas {
+      background: #f1c40f;
+      color: #333;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      flex-shrink: 0;
+    }
